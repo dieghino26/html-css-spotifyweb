@@ -9,6 +9,10 @@ body {
     font-family: Montserrat;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* utils*/
 .container {
     max-width: 1200px;
@@ -21,6 +25,7 @@ body {
 
 }
 
+/*header*/
 header {
     position: sticky;
     left: 0;
@@ -31,8 +36,20 @@ header {
     margin-bottom: 30px;
 
     background-color: rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
+header a {
+    color: #fff;
+    padding: 10px 40px;
+    border: 2px solid #fff;
+    border-radius: 30px;
+}
+
+/*sidebar*/
 .sidebar {
     background-color: #000000;
     flex-basis: 300px;
