@@ -3,3 +3,50 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/*Generics*/
+body {
+    font-family: Montserrat;
+}
+
+/* utils*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content {
+    height: calc(100vh - 100px);
+    display: flex;
+
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 80px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sidebar {
+    background-color: #000000;
+    flex-basis: 300px;
+    flex-shrink: 0;
+
+}
+
+main {
+    background-color: #141922;
+    flex-grow: 1;
+    overflow: auto;
+    padding-top: 100px;
+    color: aliceblue;
+}
+
+/*footer*/
+footer {
+    height: 100px;
+    background-color: #282828;
+}
