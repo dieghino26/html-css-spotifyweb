@@ -11,6 +11,16 @@ body {
 
 a {
     text-decoration: none;
+    color: grey;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+ul {
+    list-style-type: none;
 }
 
 /* utils*/
@@ -22,6 +32,12 @@ a {
 .content {
     height: calc(100vh - 100px);
     display: flex;
+
+}
+
+.playlist {
+    max-height: 300px;
+    overflow: auto;
 
 }
 
@@ -54,15 +70,73 @@ header a {
     background-color: #000000;
     flex-basis: 300px;
     flex-shrink: 0;
+    padding-left: 30px;
 
 }
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 30px 0px;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.navbar img {
+    display: inline;
+    width: 30px;
+
+
+}
+
+.playlist ul {
+    color: #fff;
+}
+
+.playlist li {
+    line-height: 40px;
+    font-size: 0.9rem;
+    color: grey;
+}
+
+.sidebar h4 {
+    margin-top: 20px;
+    color: #fff;
+
+}
+
+.sidebar h5 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 1rem;
+
+}
+
+.download {
+    color: #fff;
+}
+
+.download img {
+    width: 20px;
+    margin-top: 250px;
+    display: inline;
+}
+
+
+/*main*/
 
 main {
     background-color: #141922;
     flex-grow: 1;
     overflow: auto;
-    color: aliceblue;
 }
+
 
 /*footer*/
 footer {
