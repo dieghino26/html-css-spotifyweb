@@ -15,18 +15,12 @@ a {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
     display: block;
 }
 
 ul {
     list-style-type: none;
-}
-
-/* utils*/
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 .content {
@@ -39,6 +33,12 @@ ul {
     max-height: 300px;
     overflow: auto;
 
+}
+
+/* utils*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /*header*/
@@ -71,6 +71,7 @@ header a {
     flex-basis: 300px;
     flex-shrink: 0;
     padding-left: 30px;
+    padding-right: 30px;
 
 }
 
@@ -82,17 +83,28 @@ header a {
     width: 100%;
 }
 
+.mobile-logo {
+    display: none;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
 
 }
 
+.navbar span {
+    color: #fff;
+    display: inline;
+}
+
 .navbar img {
     display: inline;
     width: 30px;
+}
 
-
+.navbar div {
+    display: inline;
 }
 
 .playlist ul {
@@ -103,6 +115,10 @@ header a {
     line-height: 40px;
     font-size: 0.9rem;
     color: grey;
+}
+
+.playlist {
+    margin-bottom: 150px;
 }
 
 .sidebar h4 {
@@ -120,12 +136,30 @@ header a {
 
 .download {
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .download img {
     width: 20px;
-    margin-top: 250px;
     display: inline;
+}
+
+.fa-plus {
+    padding: 10px;
+    background-color: grey;
+    color: #000000;
+    margin-right: 5px;
+}
+
+.user img {
+    display: inline;
+    width: 20px;
+
+}
+
+.user {
+    color: #fff;
+    margin-top: 10px;
 }
 
 
@@ -136,6 +170,30 @@ main {
     flex-grow: 1;
     overflow: auto;
 }
+
+/*main-navbar*/
+.main-nav ul {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+
+.active::after {
+    content: "";
+    display: block;
+    width: 30%;
+    height: 2px;
+    background-color: greenyellow;
+    margin: 3px auto;
+
+}
+
+/*music*/
+
 
 
 /*footer*/

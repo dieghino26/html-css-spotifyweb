@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <meta charset="UTF-8">
@@ -17,6 +17,7 @@
     <link rel="icon" href="img/favicon.ico">
     <!--css-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
@@ -24,18 +25,25 @@
         <!--sidebar-->
         <nav class="sidebar">
             <div class="logo">
-                <img src="img/logo.svg" alt="logo">
+                <img class="d-none" src="img/logo.svg" alt="logo">
+                <img class="mobile-logo" src="img/logo-small.svg" alt="mobile-logo">
             </div>
             <div class="navbar">
 
-                <a href="#"><img src="img/home.svg" alt="home"> Home</a>
-                <a href="#"><img src="img/search.svg" alt="serch"> Cerca</a>
-                <a href="#"><img src="img/libreria.svg" alt="libreria"> La tua libreria</a>
+                <a href="#"><img src="img/home.svg" alt="home">
+                    <div class="d-none"> Home</div>
+                </a>
+                <a href="#"><img src="img/search.svg" alt="serch">
+                    <div class="d-none"> Cerca</div>
+                </a>
+                <a href="#"><img src="img/libreria.svg" alt="libreria">
+                    <div class="d-none"> La tua libreria</div>
+                </a>
             </div>
-            <h4>PLAYLIST</h4>
-            <div class="playlist">
+            <h4 class="d-none">PLAYLIST</h4>
+            <h5 class="d-none"><i class="fas fa-plus"></i>Crea Playlist</h5>
+            <div class="playlist d-none">
                 <ul>
-                    <h5>Crea Playlist</h5>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
@@ -48,13 +56,38 @@
 
                 </ul>
             </div>
-            <div class="download"><img src="img/download.svg" alt="download"> Installa ora</div>
+            <div class="download">
+                <img src="img/download.svg" alt="download">
+                <span class="d-none">Installa ora</span>
+            </div>
+            <hr class="d-none">
+            <div class="user">
+                <img src="img/profile.svg" alt="user">
+                <span class="d-none">Diego Brotza</span>
+            </div>
         </nav>
         <!--main-->
         <main>
             <header>
                 <a href="#">EFFETTUA L'UPGRADE</a>
             </header>
+            <nav class="main-nav">
+                <ul>
+                    <li class="active"><a href="#">IN EVIDENZA</a></li>
+                    <li><a href="#">PODCAST</a></li>
+                    <li><a href="#">CLASSIFICHE</a></li>
+                    <li><a href="#">GENERI E MOOD</a></li>
+                    <li><a href="#">NUOVE USCITE</a></li>
+                    <li><a href="#">SCOPRI</a></li>
+                </ul>
+
+            </nav>
+            <section class="music">
+                <h2>Recently Played</h2>
+                <ul>
+
+                </ul>
+            </section>
         </main>
     </div>
     <footer></footer>
