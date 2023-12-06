@@ -1,4 +1,4 @@
-@media screen and (max-width:567px) {
+@media screen and (max-width:600px) {
     .d-none {
         display: none;
     }
@@ -31,4 +31,16 @@
         margin-bottom: 600px;
     }
 
+}
+
+@media screen and (max-width:1130px) {
+    .gallery li {
+        flex-basis: 25%;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .gallery li {
+        flex-basis: 50%;
+    }
 }
