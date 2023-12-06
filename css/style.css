@@ -244,4 +244,85 @@ h2 {
 footer {
     height: 100px;
     background-color: #282828;
+    display: flex;
+    align-items: center;
+}
+
+.playing-song {
+    flex-basis: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.playing-song img {
+    width: 60px;
+    margin: 20px;
+
+}
+
+.song {
+    color: #fff;
+    margin-right: 30px;
+}
+
+/*music bar*/
+.music-bar {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.player i {
+    font-size: 1.5rem;
+}
+
+.player .fa-circle-play {
+    font-size: 2rem;
+}
+
+.bar {
+    border: 2px solid grey;
+    border-radius: 30px;
+    width: 400px;
+}
+
+.minute {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+}
+
+/*audio */
+.audio {
+    flex-basis: 25%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.far,
+.fa,
+.fas {
+    margin-right: 10px;
+    color: #fff;
+    opacity: 0.6;
+}
+
+.song span {
+    color: #fff;
+    opacity: 0.6;
+}
+
+.volume-bar {
+    border: 2px solid grey;
+    border-radius: 30px;
+    width: 200px;
+    margin-right: 30px;
+
+
 }
